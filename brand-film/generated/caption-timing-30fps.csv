@@ -1,0 +1,28 @@
+scene,id,kind,nominal_start_s,nominal_end_s,start_tc,end_tc,start_frame,end_frame,duration_s,contains_url,arabic,english,latin_line_2,status
+S1,C1,brand-lockup,8.90,12.34,00:00:08:27,00:00:12:10,267,370,3.43,no,"مبخرة حائل · منذ 1998","Mabkhra Haill · Since 1998",,in-cut
+S2,C2,lower-third,13.40,18.20,00:00:13:12,00:00:18:06,402,546,4.80,no,"خشب أثل ناشف… مختار بعناية","Dry Athal wood… carefully chosen",,in-cut
+S3,C3,lower-third,27.10,30.60,00:00:27:03,00:00:30:18,813,918,3.50,no,"صناعة يدوية","Handmade",,in-cut
+S3,C4,lower-third,34.40,37.60,00:00:34:12,00:00:37:18,1032,1128,3.20,no,"تفاصيل تراثية","Heritage detail",,in-cut
+S3,C5,lower-third,38.70,41.00,00:00:38:21,00:00:41:00,1161,1230,2.30,no,"مسامير نحاس","Brass studs",,in-cut
+S4,C6,product-label,41.40,43.70,00:00:41:12,00:00:43:21,1242,1311,2.30,no,"حايلي","Haili",,in-cut
+S4,C7,product-label,44.30,46.60,00:00:44:09,00:00:46:18,1329,1398,2.30,no,"نجدي ملكي","Najdi Malaki",,in-cut
+S4,C9,product-label,49.30,51.50,00:00:49:09,00:00:51:15,1479,1545,2.20,no,"للمجالس والضيافة","For majlis & hospitality",,in-cut
+S4,C10,product-label,52.10,54.34,00:00:52:03,00:00:54:10,1563,1630,2.23,no,"للهدايا والمناسبات","For gifts & occasions",,in-cut
+S5,C11,lower-third,55.10,59.50,00:00:55:03,00:00:59:15,1653,1785,4.40,no,"هدايا تحمل طابع حائل","Gifts with the character of Hail",,in-cut
+S5,C12,micro-label,58.00,61.50,00:00:58:00,00:01:01:15,1740,1845,3.50,no,"المحتويات حسب الباقة","Contents vary by package",,in-cut
+S6,C13,lower-third,68.70,73.00,00:01:08:21,00:01:13:00,2061,2190,4.30,no,"باسمك… وعلى ذوقك","In your name… and to your taste",,in-cut
+S6,C14,lower-third,73.60,78.00,00:01:13:18,00:01:18:00,2208,2340,4.40,no,"أسماء وشعارات وتجهيز حسب الطلب","Names, logos and made-to-order preparation",,in-cut
+S6,C13b,disclaimer-badge,68.00,80.50,00:01:08:00,00:01:20:15,2040,2415,12.50,no,"نموذج توضيحي للتخصيص","Illustrative personalisation mock-up",,badge until Gate H clears
+S7,C15,lower-third,81.00,85.00,00:01:21:00,00:01:25:00,2430,2550,4.00,no,"طلبات أفراد وكميات","Retail and bulk orders",,in-cut
+S7,C16,lower-third,85.50,89.00,00:01:25:15,00:01:29:00,2565,2670,3.50,no,"هدايا الشركات","Corporate gifts",,in-cut
+S8,C17,branch-card,93.70,96.30,00:01:33:21,00:01:36:09,2811,2889,2.60,no,"برزان — خلف بنك الراجحي","Barzan — behind Al Rajhi Bank",,in-cut
+S8,C18,branch-card,96.70,99.30,00:01:36:21,00:01:39:09,2901,2979,2.60,no,"السوق الشعبي","The popular market",,in-cut
+S8,C19,branch-card,99.70,102.34,00:01:39:21,00:01:42:10,2991,3070,2.63,no,"عقدة — منتزه الأدهم","Uqdah — Al Adham Park",,in-cut
+S9,C21,url-card,102.90,107.34,00:01:42:27,00:01:47:10,3087,3220,4.43,yes,"متجرنا الرسمي عبر منصة سلة","Our official store on Salla",mabkhrahaill.com,in-cut
+S9,C22,brand-name,107.90,111.34,00:01:47:27,00:01:51:10,3237,3340,3.43,no,"ترينديول","Trendyol",,in-cut
+S10,C23,lower-third,111.90,116.80,00:01:51:27,00:01:56:24,3357,3504,4.90,no,"توصيل لجميع مناطق المملكة","Delivery to all regions of the Kingdom",,in-cut
+S10,C24,lower-third,117.40,122.70,00:01:57:12,00:02:02:21,3522,3681,5.30,no,"اطّلعوا على خيارات الشحن والعروض الحالية في متجرنا.","See current shipping options and offers in our store.",,in-cut (Gate B default)
+S11,K1,contact-card,123.00,127.60,00:02:03:00,00:02:07:18,3690,3828,4.60,yes,"مبخرة حائل · منذ 1998 / من حائل… نصنع الطيب ونهديه","Mabkhra Haill · Since 1998 / From Hail… we make the good scent and give it",mabkhrahaill.com,in-cut
+S11,K2,contact-card,127.60,132.40,00:02:07:18,00:02:12:12,3828,3972,4.80,yes,"للتواصل والطلبات الخاصة / البريد الإلكتروني","Contact & special orders / Email",info@mabkhrahaill.com,in-cut
+S11,K3,social-card,132.40,138.00,00:02:12:12,00:02:18:00,3972,4140,5.60,yes,"إنستغرام · سناب شات · تيك توك / فيسبوك · إكس · يوتيوب / @mabkharahaill","Instagram · Snapchat · TikTok / Facebook · X · YouTube / @mabkharahaill",linktr.ee/mabkharahaill,gated: gate-i-linktree
+S12,C25,brand-lockup,138.80,142.00,00:02:18:24,00:02:22:00,4164,4260,3.20,no,"مبخرة حائل · منذ 1998","Mabkhra Haill · Since 1998",,in-cut
