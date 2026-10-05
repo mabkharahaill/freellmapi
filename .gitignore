@@ -22,5 +22,11 @@ server/data/
 deploy-pi.sh
 update-hermes.sh
 
+# Generated documentary media (large local deliverables and working assets)
+/video-assets/
+/video-project/audio/
+/video-project/render/
+/.video-tools/
+
 # Monetization planning — private, never committed
 monetization/
