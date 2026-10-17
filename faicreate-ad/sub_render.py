@@ -71,29 +71,33 @@ def shape(text: str) -> str:
 
 
 def wrap_lines(draw, text, font, maxw):
+    """Wrap in LOGICAL order, then shape each line.
+
+    Wrapping the bidi-shaped (visually reversed) string reverses the line
+    order of multi-line cues — the first logical line must stay on top.
+    """
     words = text.split(" ")
     lines, cur = [], ""
     for w in words:
         t = (cur + " " + w).strip()
-        if not cur or draw.textlength(t, font=font) <= maxw:
+        if not cur or draw.textlength(shape(t), font=font) <= maxw:
             cur = t
         else:
             lines.append(cur)
             cur = w
     if cur:
         lines.append(cur)
-    return lines
+    return [shape(l) for l in lines]
 
 
 def render_cue(idx, text, font_size=50, maxw=860):
     font = ImageFont.truetype(FONT_B, font_size)
     tmp = Image.new("RGBA", (16, 16))
     d = ImageDraw.Draw(tmp)
-    shaped = shape(text)
-    lines = wrap_lines(d, shaped, font, maxw)
+    lines = wrap_lines(d, text, font, maxw)
     if len(lines) > 3:  # shrink
         font = ImageFont.truetype(FONT_B, 44)
-        lines = wrap_lines(d, shaped, font, maxw)
+        lines = wrap_lines(d, text, font, maxw)
     lw = [d.textlength(l, font=font) for l in lines]
     asc, desc = font.getmetrics()
     lh = int(font.size * 1.58)
@@ -165,7 +169,7 @@ def main():
         meta[f"cue{i:02d}"] = {"scene": sc, "w": W, "h": H}
         print("cue", i, sc, W, H)
 
-    tag = render_plain("خيال ك يصنع المستقبل", ImageFont.truetype(FONT_B, 64),
+    tag = render_plain("خيالك يصنع المستقبل!", ImageFont.truetype(FONT_B, 64),
                        glow_blur=14)
     tag.save(f"{OUT}/tagline.png")
     meta["tagline"] = {"w": tag.width, "h": tag.height}
@@ -180,5 +184,5 @@ def main():
 
 
 if __name__ == "__main__":
-    verify(FONT_B, [t for _, t in CUES] + ["خيال ك يصنع المستقبل", "faicreate.co"])
+    verify(FONT_B, [t for _, t in CUES] + ["خيالك يصنع المستقبل!", "faicreate.co"])
     main()

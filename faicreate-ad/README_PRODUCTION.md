@@ -67,6 +67,12 @@ Subtitles: `build/substrack/` (3600 RGBA frames, 1080×1920, 30 fps) — built o
   TR=max(x−y), BL=min(x−y) (swapping TR/BL folds the warp diagonally).
 - Verify PIL image patches numerically (pixel diff / edge energy); preview
   renders of blurred regions can look deceptively crisp.
+- **Arabic RTL line wrapping (v3.1 fix):** `sub_render.wrap_lines` must wrap
+  the *logical* string (word-by-word, measuring `shape(prefix)`) and shape
+  each line individually. Wrapping the already-bidi-shaped (visually
+  reversed) string reverses the order of multi-line cue lines, so the first
+  logical line renders at the bottom. Single-line cues are unaffected, which
+  is why it only showed up on the 2–3 line cues.
 
 ## Non-regenerable sources (committed)
 
