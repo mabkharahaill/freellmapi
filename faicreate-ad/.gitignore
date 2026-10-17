@@ -1,0 +1,11 @@
+# v3 render intermediates — regenerate via the scripts below
+build/
+build3/
+
+# final MP4 copies (deliverable is uploaded to Google Drive; top-level copy
+# in /home/user is the upload source)
+*.mp4
+
+# QA contact sheets
+**/qa_*.png
+__pycache__/

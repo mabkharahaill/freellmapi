@@ -24,3 +24,6 @@ update-hermes.sh
 
 # Monetization planning — private, never committed
 monetization/
+
+# FAI CREATE ad v1 deliverable (rejected revision; superseded by v3 in faicreate-ad/)
+/FAI_Create_Ad_120s_1080x1920.mp4
